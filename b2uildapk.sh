@@ -7,7 +7,7 @@ RED='\033[0;31m'
 NC='\033[0m' # No Color
 
 APK_NAME_WITH_SUFFIX=$(cat apkname.txt)
-APK_NAME=$(basename $APK_NAME_WITH_SUFFIX .apk
+APK_NAME=$(basename $APK_NAME_WITH_SUFFIX .apk)
 
 APK_FILE=dist/$APK_NAME.apk
 SIGNED_APK_FILE=dist/$APK_NAME-aligned-debugSigned.apk
