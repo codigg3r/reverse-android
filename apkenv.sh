@@ -91,4 +91,5 @@ cp uber-apk-signer-1.3.0.jar $WS_DIR
 cp apktool_2.9.3.jar $WS_DIR
 cp aapt $WS_DIR
 cp b2uildapk.sh $WS_DIR
+chmod +x $WS_DIR/b2uildapk.sh 
 echo $APK_FILE > $WS_DIR/apkname.txt
