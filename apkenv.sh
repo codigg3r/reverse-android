@@ -85,8 +85,10 @@ echo_color $YELLOW "\n--- Decompiling the APK file..."
 java -jar apktool_2.9.3.jar d "$APK_FILE"
 echo_color $GREEN "\n--- APK decompiled successfully."
 echo_color $YELLOW "\n--- Moving the required files to the working directory..."
-cp uber-apk-signer-1.3.0.jar wvc
-cp apktool_2.9.3.jar wvc
-cp aapt wvc
-cp b2uildapk.sh wvc
-echo $APK_FILE > wvc/apkname.txt
+WS_DIR=$(basename $APK_FILE .apk
+
+cp uber-apk-signer-1.3.0.jar $WS_DIR
+cp apktool_2.9.3.jar $WS_DIR
+cp aapt $WS_DIR
+cp b2uildapk.sh $WS_DIR
+echo $APK_FILE > $WS_DIR/apkname.txt
